@@ -13,6 +13,15 @@ Developer @GA in London
     box-sizing: border-box;
 }
 
+* {
+    -moz-box-sizing: border-box;
+    /* Firexfox */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+    /* IE */
+}
+
 .bg-img {
     /* The image used */
     width: 100%;
@@ -25,39 +34,39 @@ Developer @GA in London
     /* Needed to position the navbar */
     background-size: cover;
     /* position: relative; */
-    animation: animate 50s ease-in-out infinite;
+    animation: animate 40s ease-in-out infinite;
 }
 
 @keyframes animate {
     0%, 100% {
-        background-image: url(../images/IMG_E3449.JPG);
+        background-image: url(../images/img1.jpg);
     }
     10% {
-        background-image: url(../images/IMG_7861.JPG);
+        background-image: url(../images/img2.jpg);
     }
     20% {
-        background-image: url(../images/IMG_E7866.JPG);
+        background-image: url(../images/img3.jpg);
     }
     30% {
-        background-image: url(../images/IMG_2997.JPG);
+        background-image: url(../images/img4.jpg);
     }
     40% {
-        background-image: url(../images/IMG_E7449.JPG);
+        background-image: url(../images/img5.jpg);
     }
     50% {
-        background-image: url(../images/IMG_E6721.JPG);
+        background-image: url(../images/img6.jpg);
     }
     60% {
-        background-image: url(../images/IMG_E3295.JPG);
+        background-image: url(../images/img7.jpg);
     }
     70% {
-        background-image: url(../images/IMG_E6629.JPG);
+        background-image: url(../images/img8.jpg);
     }
     80% {
-        background-image: url(../images/IMG_7330.JPG);
+        background-image: url(../images/img9.jpg);
     }
     90% {
-        background-image: url(../images/IMG_E6632.JPG);
+        background-image: url(../images/img10.jpg);
     }
 }
 
