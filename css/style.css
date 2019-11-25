@@ -25,17 +25,9 @@ Developer @GA in London
 .bg-img {
     /* width: 960px; */
     margin: 0 auto;
-    /* The image used */
     width: 100%;
-    /* background-image: url("../images/tower-bridge.jpg"); */
     height: 100vh;
-    /* Center and scale the image nicely */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    /* Needed to position the navbar */
     background-size: cover;
-    /* position: relative; */
     animation: animate 40s ease-in-out infinite;
 }
 
@@ -43,32 +35,30 @@ Developer @GA in London
     0%, 100% {
         background-image: url(../images/img1.jpg);
     }
-    10% {
+    20% {
         background-image: url(../images/img2.jpg);
     }
-    20% {
+    /* 20% {
         background-image: url(../images/img3.jpg);
-    }
-    30% {
+    } */
+    40% {
         background-image: url(../images/img4.jpg);
     }
-    40% {
+    60% {
         background-image: url(../images/img5.jpg);
     }
-    50% {
-        background-image: url(../images/img6.jpg);
-    }
-    60% {
+    
+    /* 60% {
         background-image: url(../images/img7.jpg);
-    }
-    70% {
+    } */
+    /* 80% {
         background-image: url(../images/img8.jpg);
-    }
-    80% {
+    } */
+    /* 80% {
         background-image: url(../images/img9.jpg);
-    }
-    90% {
-        background-image: url(../images/img10.jpg);
+    } */
+    80% {
+        background-image: url(../images/img10.jpg)
     }
 }
 
@@ -208,13 +198,38 @@ p {
     }
 }
 
-footer {
+.footer-container {
+    display: flex;
     background-color: hsla(164, 42%, 50%, 1);
-    text-align: center;
     padding: 1rem;
 }
 
-footer .logo {
+.left-column-links {
+    flex: 1;
+    border: 1px solid black;
+}
+.left-column-links li {
+    padding: 1rem;
+}
+.center-column {
+    flex: 2;
+    background-color: rgb(225, 238, 234);
+    /* background-color: white; */
+    border: 1px solid black;
+}
+.center-column p {
+    padding: 1rem;
+    color: black;
+}
+.right-column-links {
+    flex: 1;
+    border: 1px solid black;
+}
+
+.right-column-links li {
+    padding: 1rem;
+}
+/* footer .logo {
     font-size: 2rem;
 }
 
@@ -227,7 +242,7 @@ footer ul li {
     display: inline-block;
     list-style: none;
     margin: 1rem;
-  }
+  } */
 
 
 
