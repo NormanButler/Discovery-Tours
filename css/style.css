@@ -26,6 +26,10 @@ body {
     background-color: hsla(164, 42%, 50%, 1);
 }
 
+img {
+    max-width: 100%;
+}
+
 .london-bg-img {
     margin: 0 auto;
     width: 100%;
@@ -180,20 +184,19 @@ box-shadow: 5px 5px 5px black;
 
 .main-city-links {
     display: flex;
+    padding: 20px;
+    width: auto;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .main-city-links li {
     display: inline-block;
-   max-width:30.5%;
+    width: 33%;
+    border: 1px solid black;
 }
 
-.city-links {
-    margin: 20px;
-}
-.city-links li a {
-    display: inline-block;
-    border: 3px solid black;
-}
+
 
 .wrapper {
 	position: relative;
@@ -297,7 +300,7 @@ box-shadow: 5px 5px 5px black;
     border: 3px solid black;
     border-radius: 10px;
     background-color: white;
-    padding: 0.5rem;
+    padding: 1rem;
     flex-basis: content;;
     margin-bottom: 0.5rem;
     box-shadow: 5px 5px 5px black;
