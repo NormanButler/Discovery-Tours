@@ -22,44 +22,8 @@ Developer @GA in London
     /* IE */
 }
 
-.bg-img {
-    /* width: 960px; */
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    animation: animate 40s ease-in-out infinite;
-}
-
-@keyframes animate {
-    0%, 100% {
-        background-image: url(../images/img1.jpg);
-    }
-    20% {
-        background-image: url(../images/img2.jpg);
-    }
-    /* 20% {
-        background-image: url(../images/img3.jpg);
-    } */
-    40% {
-        background-image: url(../images/img4.jpg);
-    }
-    60% {
-        background-image: url(../images/img5.jpg);
-    }
-    
-    /* 60% {
-        background-image: url(../images/img7.jpg);
-    } */
-    /* 80% {
-        background-image: url(../images/img8.jpg);
-    } */
-    /* 80% {
-        background-image: url(../images/img9.jpg);
-    } */
-    80% {
-        background-image: url(../images/img10.jpg)
-    }
+body {
+    background-color: hsla(164, 42%, 50%, 1);
 }
 
 .london-bg-img {
@@ -74,7 +38,6 @@ Developer @GA in London
     background-size: cover;
 }
 
-
 .capetown-bg-img {
     margin: 0 auto;
     width: 100%;
@@ -87,11 +50,11 @@ Developer @GA in London
     background-size: cover;
 }
 
-.about-bg-img {
+.about-bg-img-min {
     margin: 0 auto;
     width: 100%;
     /* The image used */
-    background-image: url("../images/about-bg-img.jpg");
+    background-image: url("../images/about-bg-img-min.jpg");
     height: 100vh;
     /* Center and scale the image nicely */
     background-position: center;
@@ -100,7 +63,7 @@ Developer @GA in London
 }
 
 header {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 header li {
@@ -109,21 +72,18 @@ header li {
 
 h1 {
     display: block;
-    padding-left: 20px;
+    padding: 0 20px;
     font-size: 3rem;
-    background-color: hsla(162, 29%, 86%, 0.61);
-    /* margin: auto; */
-    border: 1px solid black;
 }
 
 h2 {
     display: inline-block;
-    padding-left: 20px;
-    font-size: 2rem;
+    padding: 20px;
+    font-size: 4rem;
     color: cornsilk;
-    /* background-color: hsla(162, 29%, 86%, 0.61); */
-    /* margin: auto; */
-    /* border: 1px solid black; */
+}
+
+
 }
 
 p {
@@ -135,41 +95,117 @@ p {
 /* Add a black background color to the top navigation */
 
 .topnav {
+    display: flex;
+    background-color: rgba(198, 221, 220,0.8);
+    background-color: ;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     width: auto;
     overflow: hidden;
+    border: 1px solid black;
+    
+}
+
+.topnav .logo {
+    border: 3px solid black;
+    background-color: rgb(134, 218, 195);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
 
 /* Style the links inside the navigation bar */
 
-.topnav a {
-    display: flex;
+.topnav > .page-links a {
     display: inline-block;
-    background-color: hsla(164, 42%, 50%, 0.5);
+    background-color: rgb(134, 218, 195);
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 30px;
+    margin: 0 10px;
     text-decoration: none;
     font-size: 17px;
-    border: 1px solid black;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
 /* Change the colour of the links on hover */
 
 .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    box-shadow: 5px 5px 5px black;
 }
 
 /* Add an active class to highlight the current page */
 
 .topnav a.active {
-    background-color: hsla(164, 42%, 50%, 1);
-    color: white;
+    background-color: antiquewhite;
+    color: black;
 }
 
+.topnav .social-media-links {
+border: 3px solid black;
+background-color: rgb(134, 218, 195);
+border-radius: 10px;
+box-shadow: 5px 5px 5px black;
+}
+
+.topnav > .social-media-links img {
+    padding: 10px;
+}
 .topnav .icon {
     display: none;
+}
+
+.discover-intro h2 {
+    display: block;
+    background-color: rgb(134,218,195);
+    margin: 20px;
+    text-align: center;
+    color:black;
+    padding: 20px;
+    font-size: 3rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.discover-intro p {
+    display: block;
+    background-color: rgb(134,218,195);
+    margin: 20px;
+    text-align: center;
+    color:black;
+    font-size: 2rem;
+    padding: 1rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.main-city-links {
+    display: flex;
+}
+
+.main-city-links li {
+    display: inline-block;
+   max-width:30.5%;
+}
+
+.city-links {
+    margin: 20px;
+}
+.city-links li a {
+    display: inline-block;
+    border: 3px solid black;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 760;
+	width: 100%;
+	padding: 30px 50px;
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -177,8 +213,12 @@ p {
         display: none;
     }
     .topnav a.icon {
+        padding: 5px;
+        font-size:40px;
+        color: black;
         float: right;
         display: block;
+        border: 1px solid black;
     }
 }
 
@@ -200,49 +240,73 @@ p {
 
 .footer-container {
     display: flex;
+    justify-content: space-between;
     background-color: hsla(164, 42%, 50%, 1);
     padding: 1rem;
 }
 
+.footer-container li:hover {
+    background-color: rgb(134, 218, 195);
+    box-shadow: 5px 5px 5px black;
+
+
+}
 .left-column-links {
-    flex: 1;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    text-align: center;
 }
 .left-column-links li {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
     padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 5px black;
 }
+
+.left-column-links a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 .center-column {
-    flex: 2;
+    display: flex;
+    width: 30%;
     background-color: rgb(225, 238, 234);
-    /* background-color: white; */
-    border: 1px solid black;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
 }
+
 .center-column p {
+    text-align: center;
     padding: 1rem;
     color: black;
 }
 .right-column-links {
-    flex: 1;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
 }
 
 .right-column-links li {
+    // align-items: stretch;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
     padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 5px black;
 }
-/* footer .logo {
+
+.right-column-links a {
     font-size: 2rem;
+    text-decoration: none;
 }
 
-footer .copyright {
-    font-size: 1.2rem;
-    color: black;
-}
-
-footer ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 1rem;
-  } */
 
 
 
