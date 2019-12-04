@@ -23,6 +23,8 @@ Developer @GA in London
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: hsla(164, 42%, 50%, 1);
 }
 
@@ -114,13 +116,14 @@ p {
 }
 
 /* Style the links inside the navigation bar */
-
-.topnav > .page-links a {
+.topnav .page-links ul {
     display: inline-block;
+}
+.topnav > .page-links a {
     background-color: rgb(134, 218, 195);
     color: black;
     text-align: center;
-    padding: 14px 30px;
+    padding: 14px 20px;
     margin: 0 10px;
     text-decoration: none;
     font-size: 17px;
@@ -153,6 +156,14 @@ box-shadow: 5px 5px 5px black;
     padding: 10px;
 }
 .topnav .icon {
+    display: none;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
     display: none;
 }
 
@@ -189,14 +200,25 @@ box-shadow: 5px 5px 5px black;
     justify-content: space-between;
     overflow: hidden;
 }
-
+.main-city-links ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .main-city-links li {
     display: inline-block;
-    width: 33%;
-    border: 1px solid black;
+    padding: 1rem;
+    width: 30%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
 }
 
-
+.main-city-links .slider {
+    background: url(../images/img1.jpg);
+    height: 100%;
+    animation: slide 15s infinite;
+    overflow: hidden;
+}
 
 .wrapper {
 	position: relative;
@@ -311,6 +333,19 @@ box-shadow: 5px 5px 5px black;
     text-decoration: none;
 }
 
-
+@keyframes slide{
+    25% {
+        background: url(../images/img2.jpg);
+    }
+    50% {
+        background: url(../images/img3.jpg);
+    }
+    75% {
+        background: url(../images/img4.jpg);
+    }
+    100% {
+        background: url(../images/img1.jpg);
+    }
+}
 
 
