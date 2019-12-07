@@ -26,6 +26,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsla(164, 42%, 50%, 1);
+
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 img {
@@ -257,8 +262,9 @@ box-shadow: 5px 5px 5px black;
 .main-city-links .slider {
     background: url(../images/img1.jpg);
     height: 50vh;
-    animation: slide 15s infinite;
     overflow: hidden;
+    animation: slide 20s infinite;
+    animation-delay: 6s;
 }
 
 .wrapper {
