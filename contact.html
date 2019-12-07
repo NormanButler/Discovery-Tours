@@ -28,44 +28,75 @@
                     <a href="index.html">Home</a>
                     <a href="london.html">London</a>
                     <a href="capetown.html">Cape Town</a>
-                    <a href="contact.html" class="active">Contact Us</a>
+                    <a href="#" class="active">Contact Us</a>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i></a>
             </div>
         </header>
+
         <div class="about-discover">
             <h2>
-                Discover Tours
+                About Discover Tours
             </h2>
             <p>Discover Tours was established in September 2016</p>
             <p>It operates in both London, UK as well as Cape Town, South Africa</p>
         </div>
 
         <div class="contact-form">
-            <h2>Contact Us</h2>
-            <div class="txtb">
-                <label>Full Name :</label>
-                <input type="text" name="" value="" placeholder="Enter Your Name">
-            </div>
+            <form action="https://formspree.io/xkngpzqk" method="POST">
 
-            <div class="txtb">
-                <label>Email :</label>
-                <input type="email" name="" value="" placeholder="Enter Your Email">
-            </div>
+                <h2>Please Contact Us Below:</h2>
+                <div class="txtb">
+                    <label>Full Name :
+                        <input type="text" name="full-name" value="" placeholder="Please Enter Your Full Name" required>
+                    </label>
+                </div>
 
-            <div class="txtb">
-                <label>Phone Number :</label>
-                <input type="text" name="" value="" placeholder="Enter Your Phone Number">
-            </div>
+                <div class="txtb">
+                    <label>
+                        Your email:
+                        <input type="email" name="reply-to" placeholder="Please Enter Your Email Address" required>
+                    </label>
+                </div>
 
-            <div class="txtb">
-                <label>Message :</label>
-                <textarea></textarea>
-            </div>
-            <a class="btn">Send</a>
+                <div class="txtb">
+                    <label>Phone Number :
+                        <input type="tel" name="phone-number" value="" placeholder="Please Enter Your Phone Number +44 1234 567890">
+                    </label>
+                </div>
+                <div class="txtb">
+                    <select name="city">
+                        <option value="none">Select City</option>
+                        <option value="london">LONDON</option>
+                        <option value="cape-town">CAPE TOWN</option>
+                    </select>
+                    <select name="tour-option">
+                        <option value="none">Select Tour</option>
+                        <option value="1-day-blitz">1 DAY BLITZ</option>
+                        <option value="3-day-discover">3 DAY DISCOVER</option>
+                        <option value="walk-the-city">WALK THE CITY</option>
+                        <option value="boat-tube-train-air">BOAT TUBE TRAIN AIR</option>
+                    </select>
+
+                </div>
+                <div class="txtb">
+                    <label>Requested Booking Date:
+                        <input type="date" name="booking-date">
+                    </label>
+                </div>
+                <div class="txtb">
+                    <label>
+                        Your message:
+                        <textarea name="message" placeholder="Please tell us what info you require"></textarea>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Submit Request</button>
+
+            </form>
+
         </div>
-
 
         <footer>
             <div class="footer-container">

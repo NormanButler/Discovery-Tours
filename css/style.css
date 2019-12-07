@@ -146,6 +146,7 @@ p {
 .topnav a.active {
     background-color: antiquewhite;
     color: black;
+    box-shadow: none;
 }
 
 .topnav .social-media-links {
@@ -252,19 +253,21 @@ box-shadow: 5px 5px 5px black;
     justify-content: space-between;
 }
 .main-city-links li {
-    display: inline-block;
+    // display: inline-block;
     padding: 1rem;
     width: 30%;
     border: 2px solid black;
     box-shadow: 5px 5px 5px black;
+    backface-visibility: hidden;
 }
 
 .main-city-links .slider {
     background: url(../images/img1.jpg);
     height: 50vh;
     overflow: hidden;
-    animation: slide 20s infinite;
+    animation: slide 30s infinite;
     animation-delay: 6s;
+    backface-visibility: hidden;
 }
 
 .wrapper {
@@ -279,7 +282,30 @@ box-shadow: 5px 5px 5px black;
 }
 
 /* Styling the Contact Form */
+.about-discover {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background: hsla(0, 0%, 95%, 0.603);
+    margin: 2rem 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
 
+.about-discover h2 {
+    padding: 1rem;
+    color: black;
+    font-size: 2.5rem;
+}
+.about-discover p {
+    color: black;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    text-align: justify;
+}
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -290,7 +316,8 @@ box-shadow: 5px 5px 5px black;
     padding: 2rem;
     box-sizing: border-box;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
+    border: 1px solid black;
     box-shadow: 5px 5px 5px black;
 }
 
@@ -307,12 +334,13 @@ box-shadow: 5px 5px 5px black;
     border-radius: 10px;
 }
 
-.txtb label {
+.contact-form label {
     display: block;
     text-align: left;
     color: black;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .txtb input, .txtb textarea {
@@ -324,17 +352,40 @@ box-shadow: 5px 5px 5px black;
     margin-top: 0.4rem;
 }
 
+.txtb textarea {
+    resize: vertical;
+}
+
+.txtb input:focus, .txtb textarea:focus {
+    background: whitesmoke;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px black;
+}
+
+::placeholder {
+    color: black;
+}
+
 .btn {
-    display: inline-block;
     background: hsla(164, 42%, 50%, 1);
     padding: 1rem 0;
     color: black;
+    font-weight: 700;
+    font-size: 1.2rem;
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 0.5rem;
+    text-align: center;
     width: 100%;
+    box-shadow: 5px 5px 5px black;
 }
+
+.btn:hover {
+    background: white;
+    border: 2px solid black;
+}
+
 
 .footer-container {
     display: flex;
@@ -447,22 +498,29 @@ box-shadow: 5px 5px 5px black;
     }
     .footer-container {
         display: block;
-
+    }
+    .left-column-links,
+    .center-column,
+    .right-column-links {
+        width: 100%;
     }
 }
 
 @keyframes slide{
-    25% {
-        background: url(../images/img2-slider.jpg);
+    20% {
+        background: url("/images/img2-slider.jpg");
     }
-    50% {
-        background: url(../images/img3-slider.jpg);
+    40% {
+        background: url("/images/img3-slider.jpg");
     }
-    75% {
-        background: url(../images/img4-slider.jpg);
+    60% {
+        background: url("/images/img4-slider.jpg")
+    }
+    80% {
+        background: url("/images/img5-slider.jpg");
     }
     100% {
-        background: url(../images/img1-slider.jpg);
+        background: url("/images/img1-slider.jpg");
     }
 }
 
