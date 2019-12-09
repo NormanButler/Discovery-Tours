@@ -1,6 +1,4 @@
-// $(document).ready(function() {
-
-
+$(document).ready(function() {
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -11,7 +9,4 @@ function myFunction() {
     }
   }
 
-
-
-
-// });
+});
