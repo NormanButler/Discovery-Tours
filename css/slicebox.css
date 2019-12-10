@@ -94,3 +94,9 @@
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
+
+@media screen and (max-width: 786px) {
+	.sb-description {
+		padding: 0 3px;
+	}	
+}

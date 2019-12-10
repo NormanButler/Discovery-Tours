@@ -18,7 +18,7 @@
 }
 
 // .sb-description h3 a {
-// 	color: #4a3c27;
+// 	color: red;
 // 	text-shadow: 0 1px 1px rgba(255,255,255,0.5);
 // }
 
@@ -47,9 +47,16 @@
 	background-position: top right;
 }
 
-// .nav-arrows a:hover {
-// 	opacity: 1;
-// }
+@media screen and (max-width: 786px) {
+
+.sb-description h3 {
+	font-size: 1.2rem;
+}
+}
+
+.nav-arrows a:hover {
+	opacity: 1;
+}
 
 // .nav-dots {
 // 	text-align: center;
