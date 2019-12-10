@@ -271,7 +271,7 @@ p {
 }
 
 .main-city-links .slider {
-    background: url(../images/img1.jpg);
+    background: url("../images/img1-slider.jpg");
     // height: 50vh;
     animation: slide 30s infinite;
     animation-delay: 6s;
@@ -586,19 +586,19 @@ footer-container a:hover {
 
 @keyframes slide{
     20% {
-        background: url("/images/img2-slider.jpg");
+        background: url("../images/img2-slider.jpg");
     }
     40% {
-        background: url("/images/img3-slider.jpg");
+        background: url("../images/img3-slider.jpg");
     }
     60% {
-        background: url("/images/img4-slider.jpg")
+        background: url("../images/img4-slider.jpg")
     }
     80% {
-        background: url("/images/img5-slider.jpg");
+        background: url("../images/img5-slider.jpg");
     }
     100% {
-        background: url("/images/img1-slider.jpg");
+        background: url("../images/img1-slider.jpg");
     }
 }
 
