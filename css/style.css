@@ -178,13 +178,18 @@ p {
 /* Drop Down Menu */
 
 /* Dropdown container - needed to position the dropdown content */
+
+.has-submenu {
+    float: left;
+    overflow: hidden;
+}
 /* Style the dropdown content (hidden by default) */
 
 .has-submenu .submenu {
     display: none;
-    // position: absolute;
+    position: absolute;
     // background-color: #f9f9f9;
-    // min-width: 160px;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -204,9 +209,9 @@ p {
 .has-submenu:hover .submenu {
     display: block;
     position: absolute;
-    background-color: none;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    // background-color: none;
+    // min-width: 160px;
+    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
 
@@ -541,18 +546,26 @@ footer-container a:hover {
     box-shadow: 5px 5px 5px black;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 786px) {
     .topnav a {
             display: none;
     }
     .topnav a.icon {
-        padding: 5px;
+        padding: 10px;
         font-size:40px;
         color: black;
         float: right;
         display: block;
         border: 1px solid black;
     }
+
+    .topnav a:not(:first-child), .has-submenu .dropbtn {
+        display: none;
+      }
+      .topnav a.icon {
+        // float: right;
+        display: inline-block;
+      }
 
     .footer-container {
         flex-direction: column;
@@ -576,21 +589,33 @@ footer-container a:hover {
     .discover-intro p {
         font-size: 1rem;
     }
-
-    .topnav.responsive {
-        position: relative;
+    .topnav {
+        display: flex;
+        flex-direction: column;
     }
+
+    .topnav.responsive {position: relative;}
 
     .topnav.responsive a.icon {
         position: relative;
+        // right: 3px;
     }
 
     .topnav.responsive a {
         display: block;
+        text-align: left;
     }
 
-    .has-submenu .dropbtn {
-        display: none;
+    // .has-submenu .dropbtn {
+    //     display: none;
+    // }
+
+    .topnav.responsive .has-submenu {float: none;}
+    .topnav.responsive .submenu {position: relative;}
+    .topnav.responsive .has-submenu .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
     }
 
     .social-media-links img,
