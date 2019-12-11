@@ -334,6 +334,7 @@ p {
   .flip-card-front h3 {
       font-size: 1.5rem;
       font-weight: 900;
+      text-shadow: 2px 2px 4px black;
   }
   .flip-card-front img {
       max-height: 30rem;
@@ -344,6 +345,10 @@ p {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  .flip-card-back h2 {
+    text-shadow: 2px 2px 6px #000000
   }
 
   .tour-flip-cards {
@@ -621,7 +626,7 @@ footer-container a:hover {
         background: url("../images/img2-slider.jpg");
     }
     40% {
-        background: url("../images/img3-slider.jpg");
+        background: url("../images/the-shard-2.jpg");
     }
     60% {
         background: url("../images/img4-slider.jpg")
