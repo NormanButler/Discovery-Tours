@@ -585,22 +585,24 @@ footer-container a:hover {
         align-items: center;
     }
 
-    .main-city-links .slider {
-        width: 435px;
-    }
-    
     .ldn-link, .cpt-link, .slider {
         width: 100%;
         margin-bottom: 1rem;
     }
 
-    .slider {
+    .main-city-links .slider {
+        max-width: 320px;
         height: 300px;
     }
-
-    .tour-flip-cards {
+ 
+    .flip-card {
+        max-width: 320px;
         flex-direction: column;
         align-items: center;
+    }
+
+    .flip-card-back li {
+        font-size: 0.8rem;
     }
     .about-discover h2 {
         text-align: center;
@@ -617,6 +619,7 @@ footer-container a:hover {
     .footer-container a {
         font-size: 1.4rem;
     }
+
     .center-column {
         width: 300px;
     }
