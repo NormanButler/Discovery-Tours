@@ -267,8 +267,7 @@ h1 {
 }
 
 h2 {
-    display: block;
-    padding: 20px;
+    padding: 0 1rem;
     font-size: 3rem;
     // color: cornsilk;
 }
@@ -301,6 +300,9 @@ p {
 }
 
 .topnav .logo {
+    display: flex;
+    height: 5rem;
+    align-items: center;
     border: 3px solid black;
     background-color: rgb(134, 218, 195);
     border-radius: 10px;
