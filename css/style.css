@@ -11,6 +11,8 @@ Developer @GA in London
 
 *, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -23,8 +25,7 @@ Developer @GA in London
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    
     background-color: hsla(164, 42%, 50%, 1);
     font-family: "lato", sans-serif;
     font-weight: 400;
@@ -48,6 +49,185 @@ img {
     background-size: cover;
 }
 
+/** CSS for the Landing page **/
+
+.header {
+    display: flex;
+    height: 95vh;
+    padding: 3rem;
+    background-image: url(../images/tower-bridge-min.jpg); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+
+.logo-box {
+    position: absolute;
+    left: 12%;
+    top: 80%;
+}
+
+.logo {
+    height: 9rem;
+}
+
+.header-text-box {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.heading-primary {
+    color: black;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 0.55rem;
+    animation-name: moveFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    
+    animation: moveFromRight 1s ease-out;
+}
+
+@keyframes moveFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+
+    80% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin-top: 8.5rem;
+    border-radius: 10rem;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: darkslategray;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: whitesmoke;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveFromBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+@media screen and (max-width: 940px) {
+
+    .heading-primary-main {
+        font-size: 1rem;
+        color: black;
+    }
+    .heading-primary-sub {
+        font-size: 0.8rem;
+        color: black;
+    }
+
+    .header-text-box {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transform: translate(-55%, -100%);
+        text-align: center;
+    }
+
+    .logo-box {
+        position: absolute;
+        left: 2%;
+        top: 80%;
+    }
+}
 .capetown-bg-img {
     margin: 0 auto;
     width: 100%;
@@ -87,10 +267,10 @@ h1 {
 }
 
 h2 {
-    display: inline-block;
+    display: block;
     padding: 20px;
-    font-size: 4rem;
-    color: cornsilk;
+    font-size: 3rem;
+    // color: cornsilk;
 }
 
 h3 {
