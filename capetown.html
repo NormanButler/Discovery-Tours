@@ -29,22 +29,28 @@
                 <div class="logo">
                     <h2>Discover Tours</h2>
                 </div>
-                <div class="page-links">
-                    <a href="cities.html">Home</a>
-                    <div class="has-submenu">
-                        <button class="dropbtn">Cape Town Tours <i class="fa fa-caret-down"></i></button>
-                        <div class="submenu">
-                            <a href="#cpt-1day-blitz">1 Day Blitz</a>
-                            <a href="#cpt-3day-discover">3 Day Discover</a>
-                            <a href="#cpt-penguins">Party with the Penguins</a>
-                            <a href="#cpt-sharks">Surf with Sharks</a>
+                <i id="hamburger" class="fa fa-bars"></i>
+                <nav>
+                    <div class="page-links">
+
+                        <a href="cities.html">Home</a>
+                        <div class="has-submenu">
+                            <button class="dropbtn">Cape Town Tours <i class="fa fa-caret-down"></i></button>
+                            <div class="submenu">
+                                <a href="#cpt-1day-blitz">1 Day Blitz</a>
+                                <a href="#cpt-3day-discover">3 Day Discover</a>
+                                <a href="#cpt-penguins">Party with the Penguins</a>
+                                <a href="#cpt-sharks">Surf with Sharks</a>
+                            </div>
                         </div>
+                        <a href="#" class="active">Cape Town</a>
+                        <a href="contact.html">Contact Us</a>
+                       
                     </div>
-                    <a href="#" class="active">Cape Town</a>
-                    <a href="contact.html">Contact Us</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i></a>
+                </nav>
+               
+                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a> -->
             </div>
         </header>
     </div>
@@ -52,11 +58,19 @@
     <div class="wrapper">
         <ul id="sb-slider" class="sb-slider">
             <li>
-                <img src="./images/v-and-a-waterfront-cape-town.jpg" alt="V and A Waterfront Cape Town">
+                <img src="./images/v-and-a-waterfront-cape-town.jpg" alt="Cape Town">
                 <div class="sb-description">
                     <h3>V&A Waterfront</h3>
                 </div>
             </li>
+
+            <li>
+                <img src="./images/chapmans-peak.jpg" alt="Chapmans Peak">
+                <div class="sb-description">
+                    <h3>Chapman's Peak</h3>
+                </div>
+            </li>
+
 
             <li>
                 <img src="./images/camps-bay-beach.jpg" alt="Campsbay Cape Town">
@@ -78,14 +92,21 @@
                     <h3>Boulders Beach</h3>
                 </div>
             </li>
+
+            <li>
+                <img src="./images/noordhoek-beach.jpg" alt="Noordhoek Beach Cape Town">
+                <div class="sb-description">
+                    <h3>Noordhoek Beach</h3>
+                </div>
+            </li>
         </ul>
 
         <div id="shadow" class="shadow"></div>
 
-        <div id="nav-arrows" class="nav-arrows">
+        <!-- <div id="nav-arrows" class="nav-arrows">
             <a href="#">Next</a>
             <a href="#">Previous</a>
-        </div>
+        </div> -->
     </div><!-- /wrapper -->
 
     <div class="tour-flip-cards">
@@ -100,11 +121,16 @@
                         <h2>Cape Town 1 Day Blitz</h2>
                         <ul>
                             <li>We will meet at the V&A Waterfront to greet the seals basking in the sun</li>
-                            <li>From here we will head up to the cableway for our trip up Table Mountain to discover this world famous Natural Wonder</li>
-                            <li>Our next stop will be the iconic beaches of Clifton 4th Beach and Campsbay with its numerous beachfront bars and restaurants</li>
-                            <li>From here we will travel along the seafront to the fishing town of Hout Bay before driving along the world famous Chapmans Peak Drive to Noordhoek</li>
-                            <li>From the sleepy village of Noordhoek we will make our way back via Fish Hoek and Muizenberg and stop along the way to admire the scenic views of the bay</li>
-                            <li>If time allows we will visit the Kirstenbosch Botanical Gardens before making our way back to the V&A Waterfront for sunset cocktails</li>
+                            <li>From here we will head up to the cableway for our trip up Table Mountain to discover
+                                this world famous Natural Wonder</li>
+                            <li>Our next stop will be the iconic beaches of Clifton 4th Beach and Campsbay with its
+                                numerous beachfront bars and restaurants</li>
+                            <li>From here we will travel along the seafront to the fishing town of Hout Bay before
+                                driving along the world famous Chapmans Peak Drive to Noordhoek</li>
+                            <li>From the sleepy village of Noordhoek we will make our way back via Fish Hoek and
+                                Muizenberg and stop along the way to admire the scenic views of the bay</li>
+                            <li>If time allows we will visit the Kirstenbosch Botanical Gardens before making our way
+                                back to the V&A Waterfront for sunset cocktails</li>
                         </ul>
                     </div>
                 </div>
@@ -124,9 +150,11 @@
                             <li>Our three day Discovery tour will include the following:</li>
                             <li>Cable car to the top of the world famous natural wonder Table Mountain</li>
                             <li>The iconic beaches of Clifton and Campsbay with their cocktail bars and restaurants</li>
-                            <li>The world famous Chapmans Peak mountain drive to beautiful Noordhoek to follow the coast to Cape Point</li>
+                            <li>The world famous Chapmans Peak mountain drive to beautiful Noordhoek to follow the coast
+                                to Cape Point</li>
                             <li>Trip to the wine farms of the Paarl, Stellenbosch and Franschhoek valleys</li>
-                            <li>A day trip up the west coast to the small fishing villages dotted along the coast such as Yzerfontein, Langebaan and Paternoster</li>
+                            <li>A day trip up the west coast to the small fishing villages dotted along the coast such
+                                as Yzerfontein, Langebaan and Paternoster</li>
                         </ul>
                     </div>
                 </div>
@@ -143,12 +171,20 @@
                     <div class="flip-card-back">
                         <h2>Party with the Penguins</h2>
                         <ul>
-                            <li>We will commence our trip from the V&A Waterfront and follow the scenic route to Muizenberg Beach</li>
-                            <li>After admiring this surfers paradise we will continue our trip along the mountain side on the scenic Boyes Drive</li>
-                            <li>We will pass through the quaint village of Kalkbay with it's numerous antique shops and continue through Fish Hoek and on to Simonstown</li>
-                            <li>In the naval town of Simon's Town we will stop to explore the quayside and harbour before continuing to Boulders Beach</li>
-                            <li>The rest of our time we will spend viewing the penguin colony at Boulders and enjoying the secluded bay and beach where you can view the penguins from up close as they wonder amongst the tourists</li>
-                            <li>Once everyone has taken their selfies with the penguins and finished swimming with them we can make our way back along the  coast and back to the V&A Waterfront in Cape Town for cocktails</li>
+                            <li>We will commence our trip from the V&A Waterfront and follow the scenic route to
+                                Muizenberg Beach</li>
+                            <li>After admiring this surfers paradise we will continue our trip along the mountain side
+                                on the scenic Boyes Drive</li>
+                            <li>We will pass through the quaint village of Kalkbay with it's numerous antique shops and
+                                continue through Fish Hoek and on to Simonstown</li>
+                            <li>In the naval town of Simon's Town we will stop to explore the quayside and harbour
+                                before continuing to Boulders Beach</li>
+                            <li>The rest of our time we will spend viewing the penguin colony at Boulders and enjoying
+                                the secluded bay and beach where you can view the penguins from up close as they wonder
+                                amongst the tourists</li>
+                            <li>Once everyone has taken their selfies with the penguins and finished swimming with them
+                                we can make our way back along the coast and back to the V&A Waterfront in Cape Town for
+                                cocktails</li>
                         </ul>
                     </div>
                 </div>
@@ -166,13 +202,20 @@
                         <h2>Surf with Sharks</h2>
                         <ul>
                             <li>We have two options for shark encounters:</li>
-                            <li>We can organise a full day unforgettable shark cage diving excursion or else a trip to HoutBay and boat cruise to Seal Island to go view the sharks and seals</li>
-                            <li>If it is the Seal Island boat trip then we will meet at the V&A Waterfront to greet the seals basking in the sun</li>
-                            <li>Our next stop will be the iconic beaches of Clifton 4th Beach and Campsbay with its numerous beachfront bars and restaurants</li>
-                            <li>From Campsbay we will make our way over the mountain to the fishing village of Hout Bay</li>
-                            <li>We can spend time walking around the market and exploring the harbour before starting our boat trip to Seal Island</li>
-                            <li>We will spend a hour or two out at sea cruising around Seal Island to view the sharks and seals</li>
-                            <li>After our boat cruise we will return via the beaches of Camps Bay, Clifton and Sea Point back to the V&A Waterfront</li>
+                            <li>We can organise a full day unforgettable shark cage diving excursion or else a trip to
+                                HoutBay and boat cruise to Seal Island to go view the sharks and seals</li>
+                            <li>If it is the Seal Island boat trip then we will meet at the V&A Waterfront to greet the
+                                seals basking in the sun</li>
+                            <li>Our next stop will be the iconic beaches of Clifton 4th Beach and Campsbay with its
+                                numerous beachfront bars and restaurants</li>
+                            <li>From Campsbay we will make our way over the mountain to the fishing village of Hout Bay
+                            </li>
+                            <li>We can spend time walking around the market and exploring the harbour before starting
+                                our boat trip to Seal Island</li>
+                            <li>We will spend a hour or two out at sea cruising around Seal Island to view the sharks
+                                and seals</li>
+                            <li>After our boat cruise we will return via the beaches of Camps Bay, Clifton and Sea Point
+                                back to the V&A Waterfront</li>
                         </ul>
                     </div>
                 </div>

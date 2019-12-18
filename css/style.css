@@ -253,7 +253,7 @@ img {
 }
 
 header {
-    padding-top: 10px;
+     padding-top: 1rem;
 }
 
 header li {
@@ -269,7 +269,6 @@ h1 {
 h2 {
     padding: 0 1rem;
     font-size: 3rem;
-    // color: cornsilk;
 }
 
 h3 {
@@ -286,10 +285,16 @@ p {
     color: cornsilk;
 }
 
+#hamburger {
+	color: black;
+    font-size: 3rem;
+}
+
 /* Add a black background color to the top navigation */
 
 .topnav {
     display: flex;
+    flex-direction: column;
     background-color: rgba(198, 221, 220,0.8);
     align-items: center;
     justify-content: space-between;
@@ -308,12 +313,15 @@ p {
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
 }
-
+ nav {
+     display: flex;
+ }
 /* Style the links inside the navigation bar */
-.topnav .page-links {
+nav .page-links {
     display: flex;
+    flex-direction: column;
 }
-.topnav > .page-links a {
+nav > .page-links a {
     background-color: rgb(134, 218, 195);
     color: black;
     text-align: center;
@@ -327,36 +335,22 @@ p {
 
 /* Change the colour of the links on hover */
 
-.topnav a:hover {
+nav a:hover {
     background-color: #ddd;
     box-shadow: 5px 5px 5px black;
 }
 
 /* Add an active class to highlight the current page */
 
-.topnav a.active {
+nav a.active {
     background-color: antiquewhite;
     color: black;
     box-shadow: none;
 }
 
-.topnav .social-media-links a {
-    display: inline-block;
-    padding: 0.6rem;
-    margin: 0.1rem;
-    border: 3px solid black;
-    background-color: rgb(134, 218, 195);
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px black;
-}
-.social-media-links a:hover {
-    background-color: white;
-}
-
-.topnav .icon {
+nav .social-media-links {
     display: none;
 }
-
 /* Drop Down Menu */
 
 /* Dropdown container - needed to position the dropdown content */
@@ -370,7 +364,6 @@ p {
 .has-submenu .submenu {
     display: none;
     position: absolute;
-    // background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -546,10 +539,14 @@ p {
             transform: rotateY(180deg);
   }
 
-  .flip-card-back h2 {
+    .flip-card-back h2 {
     font-size: 2rem;
     text-shadow: 2px 2px 6px #000000
-  }
+    }
+
+    .flip-card-back li {
+        font-size: 1.2rem;
+    }
 
   .tour-flip-cards {
       display: -webkit-box;
@@ -728,78 +725,40 @@ footer-container a:hover {
     box-shadow: 5px 5px 5px black;
 }
 
-@media screen and (max-width: 786px) {
-    .topnav a {
-            display: none;
-    }
-    .topnav a.icon {
-        padding: 10px;
-        font-size:40px;
+@media screen and (min-width: 1000px) {
+
+#hamburger {
+    display: none;
+}
+
+.topnav {
+    flex-direction: row;
+}
+
+.topnav .page-links {
+        display: flex;
+        flex-direction: row;
         color: black;
-        float: right;
-        display: block;
         border: 1px solid black;
     }
 
-    .topnav a:not(:first-child), .has-submenu .dropbtn {
-        display: none;
-      }
-      .topnav a.icon {
-        // float: right;
-        display: inline-block;
-      }
 
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 786px) {
-
-    .logo h1 {
-        font-size: 2rem;
-    }
-
-    .icon i {
-        font-size: 1.5rem;
-    }
-    .discover-intro h2 {
-        font-size: 1.6rem;
-    }
-
-    .discover-intro p {
-        font-size: 1rem;
-    }
-    .topnav {
+    nav .social-media-links {
         display: flex;
-        flex-direction: column;
     }
-
-    .topnav.responsive {position: relative;}
-
-    .topnav.responsive a.icon {
-        position: relative;
-        // right: 3px;
+    
+    nav .social-media-links a {
+        padding: 0.6rem;
+        margin: 0.1rem;
+        border: 3px solid black;
+        background-color: rgb(134, 218, 195);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px black;
     }
-
-    .topnav.responsive a {
-        display: block;
-        text-align: left;
+    .social-media-links a:hover {
+        background-color: white;
     }
-
-    // .has-submenu .dropbtn {
-    //     display: none;
-    // }
-
-    .topnav.responsive .has-submenu {float: none;}
-    .topnav.responsive .submenu {position: relative;}
-    .topnav.responsive .has-submenu .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-
+    
     .social-media-links img,
     .social-media-links {
         display: none;

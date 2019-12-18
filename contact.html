@@ -24,14 +24,15 @@
                 <div class="logo">
                     <h2>Discover Tours</h2>
                 </div>
-                <div class="page-links">
-                    <a href="cities.html">Home</a>
-                    <a href="london.html">London</a>
-                    <a href="capetown.html">Cape Town</a>
-                    <a href="#" class="active">Contact Us</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i></a>
+                <i id="hamburger" class="fa fa-bars"></i>
+                <nav>
+                    <div class="page-links">
+                        <a href="cities.html">Home</a>
+                        <a href="london.html">London</a>
+                        <a href="capetown.html">Cape Town</a>
+                        <a href="#" class="active">Contact Us</a>
+                    </div>
+                </nav>
             </div>
         </header>
 
@@ -66,6 +67,7 @@
                             placeholder="Please Enter Your Phone Number +44 1234 567890">
                     </label>
                 </div>
+
                 <div class="txtb">
                     <select name="city">
                         <option value="none">Select City</option>
@@ -82,11 +84,13 @@
                         <option value="surf-with-sharks">SURF WITH SHARKS</option>
                     </select>
                 </div>
+
                 <div class="txtb">
                     <label>Requested Booking Date:
                         <input type="date" name="booking-date">
                     </label>
                 </div>
+
                 <div class="txtb">
                     <label>
                         Your message:
@@ -97,7 +101,6 @@
                 <button type="submit" class="btn">Submit Request</button>
 
             </form>
-
         </div>
 
         <footer>
