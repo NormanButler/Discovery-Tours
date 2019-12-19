@@ -12,7 +12,7 @@
 // });
 
 
-$(document).ready() 
+// $(document).ready() 
 
 	$('#hamburger').on('click', function() {
 		$('nav').slideToggle();

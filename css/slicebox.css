@@ -95,7 +95,7 @@
 	transform-style: preserve-3d;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (min-width: 1000px) {
 	.sb-description {
 		padding: 0 3px;
 	}	

@@ -25,7 +25,7 @@ Developer @GA in London
 }
 
 body {
-    
+    // padding: 2rem 3rem;
     background-color: hsla(164, 42%, 50%, 1);
     font-family: "lato", sans-serif;
     font-weight: 400;
@@ -53,8 +53,8 @@ img {
 
 .header {
     display: flex;
-    height: 95vh;
-    padding: 3rem;
+    margin: 2rem 3rem;
+    height: 100vh;
     background-image: url(../images/tower-bridge-min.jpg); 
     background-size: cover;
     background-position: center;
@@ -172,8 +172,7 @@ img {
 }
 
 .btn-white {
-    background-color: #fff;
-    color: darkslategray;
+    background-color: white;
 }
 
 .btn::after {
@@ -268,7 +267,7 @@ h1 {
 
 h2 {
     padding: 0 1rem;
-    font-size: 3rem;
+    font-size: 2.9rem;
 }
 
 h3 {
@@ -286,6 +285,10 @@ p {
 }
 
 #hamburger {
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: whitesmoke;
 	color: black;
     font-size: 3rem;
 }
@@ -320,13 +323,15 @@ p {
 nav .page-links {
     display: flex;
     flex-direction: column;
+    // border: 1px solid black;
 }
 nav > .page-links a {
+    // display: inline-block;
     background-color: rgb(134, 218, 195);
     color: black;
     text-align: center;
     padding: 0.65rem 1rem;
-    margin: 0 0.8rem;
+    margin: 0.5rem;
     text-decoration: none;
     font-size: 1.3rem;
     border: 3px solid black;
@@ -343,9 +348,11 @@ nav a:hover {
 /* Add an active class to highlight the current page */
 
 nav a.active {
+
     background-color: antiquewhite;
     color: black;
     box-shadow: none;
+
 }
 
 nav .social-media-links {
@@ -358,6 +365,7 @@ nav .social-media-links {
 .has-submenu {
     float: left;
     overflow: hidden;
+    border-radius: 10px;
 }
 /* Style the dropdown content (hidden by default) */
 
@@ -377,16 +385,15 @@ nav .social-media-links {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    // text-align: left;
   }
 
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .has-submenu:hover .submenu {
     display: block;
     position: absolute;
-    // background-color: none;
-    // min-width: 160px;
-    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: cornsilk;
+    border-radius: 10px;
     z-index: 1;
   }
 
@@ -394,9 +401,9 @@ nav .social-media-links {
     background-color: rgb(134, 218, 195);
     font-family: inherit;
     margin: 0;
-    color: black;
+    // color: black;
     text-align: center;
-    padding: 1rem 1.2rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     font-size: 1.5rem;
     border: 3px solid black;
@@ -432,22 +439,7 @@ nav .social-media-links {
  
 /** Styling the center row of Main City page **/
 
-.main-city-links {
-    display: flex;
-    justify-content: space-between;
-    padding: 3rem 1.5rem;
-    width: auto;
-    overflow: hidden;
-}
 
-.ldn-link, .cpt-link, .slider {
-    width: 30%;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 5px black;
-    overflow: hidden;
-}
 
 .main-city-links .slider {
     background: url("../images/img1-slider.jpg");
@@ -523,7 +515,7 @@ nav .social-media-links {
   }
   
   .flip-card-front h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 900;
     text-shadow: 2px 2px 4px black;
   }
@@ -539,15 +531,7 @@ nav .social-media-links {
             transform: rotateY(180deg);
   }
 
-    .flip-card-back h2 {
-    font-size: 2rem;
-    text-shadow: 2px 2px 6px #000000
-    }
-
-    .flip-card-back li {
-        font-size: 1.2rem;
-    }
-
+   
   .tour-flip-cards {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -558,7 +542,13 @@ nav .social-media-links {
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly;
   }
-
+  .flip-card-back li {
+    font-size: 1.1rem;
+    }
+.about-discover h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
 .wrapper {
     display: flex;
     display: inline-block;
@@ -675,7 +665,9 @@ nav .social-media-links {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-between;
     background-color: hsla(164, 42%, 50%, 1);
     padding: 1rem;
 }
@@ -688,7 +680,7 @@ nav .social-media-links {
 .center-column {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 26rem;
     background-color: rgb(225, 238, 234);
     border: 3px solid black;
     border-radius: 10px;
@@ -710,12 +702,12 @@ nav .social-media-links {
     text-align: center;
     display: block;
     font-size: 2rem;
-    width: 300px;
+    width: 26rem;
     text-decoration: none;
     border: 3px solid black;
     border-radius: 10px;
     background-color: white;
-    padding: 1rem;
+    padding: 0.6rem;
     margin-bottom: 0.5rem;
     box-shadow: 5px 5px 5px black;
 }
@@ -725,29 +717,69 @@ footer-container a:hover {
     box-shadow: 5px 5px 5px black;
 }
 
+.main-city-links {
+    flex-direction: column;
+    align-items: center;
+}
+.main-city-links .slider {
+    max-width: 100%;
+    height: 300px;
+}
+.ldn-link, .cpt-link, .slider {
+    width: 95%;
+    margin-bottom: 1rem;
+}
+.main-city-links {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    overflow: hidden;
+}
+
+.ldn-link, .cpt-link, .slider {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+}
+
 @media screen and (min-width: 1000px) {
+
+    h2 {
+        padding: 0 1rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
 
 #hamburger {
     display: none;
 }
 
 .topnav {
+    display: flex;
     flex-direction: row;
 }
 
-.topnav .page-links {
-        display: flex;
-        flex-direction: row;
-        color: black;
-        border: 1px solid black;
-    }
+// .topnav .page-links {
+//         display: inline-block;
+//         flex-direction: row;
+//     }
 
-
-    nav .social-media-links {
+nav .page-links {
+display: inline-block;
+}
+nav .page-links a {
+    display: inline-block;
+}
+nav .social-media-links {
         display: flex;
     }
     
-    nav .social-media-links a {
+nav .social-media-links a {
+    // display: inline-block;
+        height: fit-content;
         padding: 0.6rem;
         margin: 0.1rem;
         border: 3px solid black;
@@ -755,57 +787,67 @@ footer-container a:hover {
         border-radius: 10px;
         box-shadow: 5px 5px 5px black;
     }
-    .social-media-links a:hover {
+.social-media-links a:hover {
         background-color: white;
     }
     
-    .social-media-links img,
-    .social-media-links {
-        display: none;
+.main-city-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem 1.5rem;
+        width: auto;
+        overflow: hidden;
     }
     
-    .main-city-links {
-        flex-direction: column;
-        align-items: center;
+.ldn-link, .cpt-link, .slider {
+        width: 30%;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 2px solid black;
+        box-shadow: 5px 5px 5px black;
+        overflow: hidden;
     }
 
-    .ldn-link, .cpt-link, .slider {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
+.has-submenu:hover .submenu {
+    display: flex;
+    flex-direction: column;
+}
 
-    .main-city-links .slider {
-        max-width: 320px;
-        height: 300px;
-    }
- 
-    .flip-card {
-        max-width: 320px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flip-card-back li {
-        font-size: 0.8rem;
-    }
-    .about-discover h2 {
-        text-align: center;
+.flip-card-back h2 {
         font-size: 2rem;
-    }
+        text-shadow: 2px 2px 6px #000000
+        }
     
-    .about-discover p {
+.flip-card-back li {
+            font-size: 1.2rem;
+        }
+    
+.about-discover p {
         text-align: center;
     }
 
-    .contact-form h2 {
+.contact-form h2 {
         font-size: 1.8rem;
     }
-    .footer-container a {
-        font-size: 1.4rem;
+
+.footer-container {
+        display: flex;
+        // width: 95%;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .center-column {
-        width: 300px;
+.footer-container a {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+.center-column,
+.right-column-links,
+.left-column-links {
+    justify-content: space-between;
+        width: 30%;
     }
 }
 
